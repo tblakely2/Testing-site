@@ -2,10 +2,10 @@
 //if "email" variable is filled out, send email   
 if (isset($_POST['submit']))  {    
 	//email information
-	$name = $_POST['name'];  
-	$subject = $_POST['subject'];  
-	$mailFrom = "customerprofileresponse@profireenergy.com"
-	$message = $_POST['message'];  
+	$name = "name"; //$_POST['name'];  
+	$subject = "subject"; //$_POST['subject'];  
+	$mailFrom = "customerprofileresponse@profireenergy.com";
+	$message = "message"; //$_POST['message'];  
 
 	$mailTo = "tblakely2@studentmail.nait.ca";
 	$headers = "From: ".$mailFrom;

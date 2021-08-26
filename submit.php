@@ -4,14 +4,17 @@ if (isset($_POST['submit']))  {
 	//email information
 	$name = $_POST['name'];  
 	$subject = $_POST['subject'];  
-	$mailFrom = $_POST['mail'];  
+	$mailFrom = "customerprofileresponse@profireenergy.com"
 	$message = $_POST['message'];  
 
-	$mailTo = "tblakely@profireenergy.com";
+	$mailTo = "tblakely2@studentmail.nait.ca";
 	$headers = "From: ".$mailFrom;
 	$txt = "You have received an email from ".$name.".\n\n".$message;
 
 	mail($mailTo, $subject, $txt, $headers);
 	header("Location: index.php?mailsend");
-} 
+}
+//LOOK INTO PHPMAILER
+//USE AZURE SMTP CREDENTIALS
+//CONTACT IT "I HAVE A PHP SCRIPT AND I WANT TO HOST IT IN THEIR INFRASTRUCTURE 
 ?>
